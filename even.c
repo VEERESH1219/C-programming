@@ -21,20 +21,13 @@ int main()
     scanf("%i", &Num);
     printf("The even numbers up to %i are: ", Num);
 
-    while (Counter < Num) 
+    while (Counter <= Num ) 
     {
-            printf("%i", Counter);
-
-         if (Counter + 2 < Num)
-         {
-         	printf(", ");
-         }
+            printf("%i, ", Counter);
             Counter = Counter + 2;   
     }
 
-    
-
-    	printf(".\n");
+    	printf("\b\b.\n");
     
 
     return 0;

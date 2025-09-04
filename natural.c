@@ -20,23 +20,16 @@ int main()
 	int Num, Counter = 1;
 
 	printf("Upto which number do you want to print natural numbers? ");
-    scanf("%i", &Num);
-    printf("The natural numbers up to %i are: ", Num);
+   scanf("%i", &Num);
+   printf("The natural numbers up to %i are: ", Num);
 
-    while (Counter <= Num) 
+    while (Counter < Num) 
     {
-            printf("%i", Counter);
-
-         if (Counter < Num)
-         {
-         	printf(", ");
-         }
-            Counter = Counter + 1;   
+       printf("%i, ", Counter);
+       Counter = Counter + 1;   
     }
 
-    
-
-    	printf(".\n");
+    printf("%i.\n", Counter);
     
 
     return 0;
